@@ -623,13 +623,17 @@ footer .credit a {
     width: 80%;
   }
 
-  .modal-container {
-    margin: 20% auto;
+  .navbar .navbar-nav a {
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+  }
+  .navbar .navbar-extra a {
+    margin: 0 0.2rem;
   }
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 778px) {
   html {
     font-size: 62%;
   }
@@ -703,6 +707,14 @@ footer .credit a {
     width: 25%;
     padding: auto;
   }
+
+  .modal-container {
+    margin: 20% auto;
+  }
+
+  .navbar .navbar-extra a {
+    margin: 0 1.5rem;
+  }
 }
 
 /* Mobile */
@@ -713,5 +725,18 @@ footer .credit a {
 
   .navbar .search-form {
     width: 80%;
+  }
+
+  .modal-container {
+    margin: 50% auto;
+  }
+
+  .modal-content a {
+    width: 38%;
+    padding: 1rem;
+  }
+
+  .modal-content span {
+    padding: 0.5rem 0;
   }
 }

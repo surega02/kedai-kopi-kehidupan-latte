@@ -185,9 +185,10 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
 }
 
-.hero::after {
+/* .hero::after {
   content: "";
   display: block;
   position: absolute;
@@ -195,7 +196,7 @@ body {
   height: 20%;
   bottom: 0;
   background: linear-gradient(0deg, rgba(1, 1, 3, 1) 4%, rgba(255, 255, 255, 0) 50%);
-}
+} */
 
 .hero .content {
   padding: 1.4rem 7%;
@@ -273,6 +274,10 @@ body {
 
 .about .row .about-img img {
   width: 100%;
+  mask-image: url(../img/menu/square.svg);
+  mask-size: 66%;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .about .row .content {
@@ -312,6 +317,7 @@ body {
   padding: 0.5rem 2rem;
   width: 100%;
   border-radius: 1rem;
+  margin-top: 2rem;
 }
 
 .menu .text-menu .text-list {
@@ -366,6 +372,7 @@ body {
 /* Products section */
 .products .row {
   display: grid;
+  margin-top: 1.8rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
